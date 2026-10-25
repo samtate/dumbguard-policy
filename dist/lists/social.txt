@@ -1,0 +1,173 @@
+# drawbridge — social media domains
+#
+# Curated and pinned by SHA-256 in dist/policy.json, unlike the large upstream
+# lists which rotate daily. Entries cover the parent domain only; matching is
+# suffix-based, so `facebook.com` also blocks `m.facebook.com`.
+#
+# YouTube is blocked outright here. The safe-search rewriting in DnsFilter still
+# maps youtube.com to restrictmoderate.youtube.com, but blocking is checked first,
+# so the redirect only takes effect if YouTube stops being blocked.
+#
+# As of policy 43 that is a switch rather than an edit: the "Allow YouTube (16+)"
+# option puts these hosts in allowed_domains, allow beats block, and the redirect
+# wakes up on its own. Restricted Mode therefore arrives with YouTube rather than
+# needing anything else -- and it arrives at the DNS layer, where nothing inside
+# the app or the site can reach it.
+
+# YouTube — all of it, including Kids, TV, Music, Studio and embeds.
+# Matching is suffix-based, so youtube.com already covers m., music., tv.,
+# kids. and studio.youtube.com; only separate registrable domains and the
+# specific googleapis hosts need listing.
+youtube.com
+youtu.be
+youtubekids.com
+youtube-nocookie.com
+ytimg.com
+googlevideo.com
+yt3.ggpht.com
+youtubei.googleapis.com
+youtube.googleapis.com
+
+# Meta
+facebook.com
+fb.com
+fb.me
+fbcdn.net
+fbsbx.com
+messenger.com
+instagram.com
+cdninstagram.com
+threads.net
+threads.com
+
+# TikTok — the app talks to ByteDance, not to tiktok.com
+#
+# Added 2026-08-18 after TikTok Lite served video on an alpha phone where the six
+# tiktok-branded entries below were already blocked. The Lite build reaches the
+# same backend under the parent company's own names, so blocking the brand blocks
+# the website and leaves the app working: api.snssdk.com for the feed,
+# ibytedtos/byteimg/pstatp for the media. Instagram Lite showed nothing on the
+# same phone, which is the control — Meta serves its Lite build from the same
+# instagram.com and fbcdn.net the full app uses.
+tiktok.com
+tiktokv.com
+tiktokcdn.com
+musical.ly
+douyin.com
+# Regional splits. The list carried tiktokcdn-us.com and no EU counterpart,
+# which is the likeliest reason a Belgian phone kept playing video with
+# everything else here blocked: TikTok serves European users from European
+# infrastructure. Added 2026-08-18.
+tiktokcdn-us.com
+tiktokcdn-eu.com
+tiktokv.us
+tiktokv.eu
+ttcdn-us.com
+tiktokrow-cdn.com
+ttlivecdn.com
+tiktokd.org
+byteoversea.com
+byteoversea.net
+ibyteimg.com
+# ByteDance API and telemetry
+snssdk.com
+isnssdk.com
+sgsnssdk.com
+amemv.com
+bytedance.com
+bytedanceapi.com
+byted.org
+bytedns.net
+# ByteDance image and video CDNs
+pstatp.com
+ipstatp.com
+sgpstatp.com
+byteimg.com
+ibytedtos.com
+byteicdn.com
+bytetcdn.com
+bytecdn.cn
+muscdn.com
+worldfcdn.com
+
+# Snap
+snapchat.com
+snap.com
+sc-cdn.net
+
+# X / Twitter
+twitter.com
+x.com
+t.co
+twimg.com
+
+# Reddit
+reddit.com
+redd.it
+redditmedia.com
+redditstatic.com
+
+# Discord
+discord.com
+discord.gg
+discordapp.com
+discordapp.net
+discordcdn.com
+
+# LinkedIn
+linkedin.com
+licdn.com
+lnkd.in
+
+# Image and short-form feeds
+pinterest.com
+pinimg.com
+tumblr.com
+imgur.com
+9gag.com
+ifunny.co
+
+# Live streaming
+twitch.tv
+ttvnw.net
+kick.com
+rumble.com
+bigo.tv
+
+# Adult-adjacent creator platforms
+onlyfans.com
+onlyfans.net
+fansly.com
+
+# Messaging
+kik.com
+weixin.qq.com
+wechat.com
+line.me
+line-apps.com
+naver.jp
+
+# Short-form video
+lemon8-app.com
+
+# Other networks
+vk.com
+weibo.com
+telegram.org
+telegram.me
+t.me
+bereal.com
+bsky.app
+bsky.social
+mastodon.social
+truthsocial.com
+gettr.com
+parler.com
+minds.com
+yubo.live
+omegle.com
+chatroulette.com
+monkey.app
+tinder.com
+bumble.com
+grindr.com

@@ -1,0 +1,151 @@
+# drawbridge — AI companion / roleplay chat domains
+#
+# These are the "virtual girlfriend/boyfriend" and unfiltered-roleplay services.
+# They are not covered by mainstream adult or social blocklists, which is why
+# this list is maintained here and pinned by SHA-256 in dist/policy.json.
+#
+# General-purpose assistants (chatgpt.com, claude.ai, gemini.google.com) are
+# deliberately not listed — add them to `blocked_domains` in the policy if you
+# want them blocked too.
+#
+# Grok is the exception, and is here rather than left to that rule: it ships a
+# companion mode with deliberately unfiltered personas, which is the thing this
+# list is for. Its home inside X is already covered — x.com is on the social
+# list — so what these entries add is the standalone app and site.
+
+character.ai
+aidungeon.io
+aidungeon.com
+play.aidungeon.io
+kajiwoto.com
+kajiwoto.ai
+weaver.app
+characterai.io
+c.ai
+replika.com
+replika.ai
+myreplika.ai
+chai-research.com
+chai.ml
+janitorai.com
+janitorai.co
+crushon.ai
+spicychat.ai
+candy.ai
+dreamgf.ai
+girlfriendgpt.ai
+gptgirlfriend.online
+romantic.ai
+nomi.ai
+kindroid.ai
+muah.ai
+polybuzz.ai
+talkie-ai.com
+linky.ai
+joyland.ai
+sakura.fm
+yodayo.com
+moescape.ai
+pephop.ai
+chub.ai
+figgs.ai
+moemate.io
+botify.ai
+myanima.ai
+paradot.ai
+ourdream.ai
+soulgen.ai
+soulfun.ai
+herahaven.com
+secrets.ai
+nectar.ai
+lovescape.com
+kupid.ai
+promptchan.ai
+perchance.org
+venus.chub.ai
+narrus.ai
+tavernai.net
+risuai.net
+sillytavern.app
+
+# xAI / Grok
+grok.com
+x.ai
+
+# ---------------------------------------------------------------------------
+# European Parent Safety Catalogue — added with policy 21.
+#
+# anima.ai was REMOVED in the same edit. It is a venture studio for
+# nature-inspired innovation and has nothing to do with the companion app;
+# the Anima in the catalogue is myanima.ai, which is what replaced it. The
+# package (anima.virtual.ai.robot.friend) is blocked either way, so the wrong
+# entry blocked an unrelated business without ever blocking the app.
+# ---------------------------------------------------------------------------
+
+evaapp.ai
+simsimi.com
+igirl.ai
+
+# ---------------------------------------------------------------------------
+# Added 2026-08-16, after the owner found the Play Store side of this category
+# wide open: Cycle AI, Rosytalk, StarGirl and Trend AI were all installable on
+# a locked phone. The package ids are the substance of that fix and live in
+# `blocked_packages`; these are the handful of matching web fronts.
+#
+# **Only domains whose page said what they were.** `fantasia.ai` did not
+# respond and `cycleai.com` served a generic "Home", and both names are ordinary
+# enough to belong to something else entirely — the same trap that put anima.ai
+# on this list once and then took it off again. Their apps are blocked by id,
+# which is the half that was actually missing.
+rosytalk.eu
+sayloai.com
+dopple.ai
+evaapp.ai
+kindroid.org
+# Behind Cloudflare, so the page could not be read; the name is distinctive
+# enough and the app id com.hiwaifu.app is confirmed.
+hiwaifu.com
+
+# Policy 133. The sites of the character-chat and AI-companion apps added to
+# blocked_packages in the same policy, each read from the app's own Play listing
+# (developer website) and checked to answer with that service. Developer-studio
+# domains that front several unrelated apps (caitty.com, thirtythreeapps.com,
+# isetai.com ...) and shared hosts (github.io, notion.site, web.app) are left
+# out on purpose: they would block more than the companion.
+charland.ai
+chacha-ai.io
+chaterai.xyz
+fandy.space
+getlore.eu
+getsoulmate.ai
+hangjam.ai
+inlyth.app
+kun.chat
+laixen.com
+lizlis.ai
+lookatmy.ai
+lovie.chat
+myimate.app
+myintimate.app
+oshikoi.io
+soulmateapp.link
+soulmateapp.net
+talefy.ai
+underfiction.com
+charmsy.io
+charpal.app
+chatjoy.chat
+cherrytalk.app
+deeploveai.net
+digitalsoul.chat
+isekaizero.ai
+loveydovey.ai
+mecordai.com
+palumachat.com
+penguapp.co
+yourwaifus.com
+zingchat.me
+dewy.chat
+bagelchat.ai
+soumichat.com

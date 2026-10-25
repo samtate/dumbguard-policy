@@ -1,0 +1,336 @@
+# drawbridge — game and game-adjacent domains
+#
+# App installs are stopped by `blocked_packages`; this list closes the browser
+# route to the same games, and the Minecraft Bedrock multiplayer servers.
+#
+# NOTE ON MINECRAFT: the game itself is deliberately NOT blocked — neither the
+# package nor minecraft.net. Only Realms and the large public Bedrock servers
+# are listed. A DNS blocklist cannot stop a server joined by raw IP address, and
+# it cannot enumerate the thousands of small servers that exist, so this is a
+# speed bump rather than a wall. Treat single-player and LAN as allowed.
+
+# Roblox
+roblox.com
+rbxcdn.com
+roblox.qq.com
+
+# Fortnite / Epic
+fortnite.com
+epicgames.com
+unrealengine.com
+easyantcheat.net
+
+# Supercell
+brawlstars.com
+supercell.com
+
+# Among Us
+innersloth.com
+among-us.net
+
+# Call of Duty
+callofduty.com
+codmobile.com
+
+# PUBG
+pubgmobile.com
+pubg.com
+
+# Free Fire
+ff.garena.com
+garena.com
+freefiremobile.com
+
+# Rockstar / GTA
+rockstargames.com
+socialclub.rockstargames.com
+
+# Social VR
+rec.net
+recroom.com
+vrchat.com
+vrchat.net
+
+# Minecraft Realms and major public Bedrock servers
+realms.minecraft.net
+pocket.realms.minecraft.net
+hivebedrock.network
+play.cubecraft.net
+mco.cubecraft.net
+mco.mineplex.com
+mco.lbsg.net
+play.galaxite.net
+play.nethergames.org
+play.inpvp.net
+mineville.org
+
+# ---------------------------------------------------------------------------
+# European Parent Safety Catalogue — added with policy 21.
+#
+# Publisher domains where the publisher only makes games, game domains where
+# the game has its own site. Every entry below was resolved before being added;
+# candidates that had lapsed to squatters or to an unrelated business were
+# dropped rather than listed. Notably absent for that reason: frostpunkmobile.com
+# (now a gambling site, and covered by the gambling list anyway), wwemayhem.com
+# (a fan forum), nuverse.com (a financial firm, not the games publisher).
+# ---------------------------------------------------------------------------
+
+# Crime sandbox / GTA-likes
+gameloft.com
+naxeex.com
+poxelstudios.com
+madout2.com
+apex-designs.net
+
+# Military and PvP shooters
+krafton.com
+battlegroundsmobileindia.com
+axlebolt.com
+azurgames.com
+forgegames.net
+blayzegames.com
+criticalforce.fi
+criticalops.com
+levelinfinite.com
+arenabreakout.com
+warface.com
+my.games
+wildlifestudios.com
+gameinsight.com
+
+# Zombie and survival
+madfingergames.com
+pikpok.com
+intothedead.com
+feelingtouch.com
+badflyinteractive.com
+kefirgames.com
+funplus.com
+stateofsurvivalgame.com
+decagames.com
+nextgames.com
+skybound.com
+telltale.com
+11bitstudios.com
+thiswarofmine.com
+com2us.com
+klei.com
+
+# Horror
+scottgames.com
+fivenightsatfreddys.com
+keplerians.com
+mobentertainment.com
+poppyplaytime.com
+joeydrewstudios.com
+basicallygames.com
+baldisbasics.com
+skytecgames.com
+neteasegames.com
+identityv.com
+
+# Fighting
+mortalkombat.com
+nekki.com
+shadowfight.com
+reliancegames.com
+kabam.com
+playcontestofchampions.com
+
+# Gacha and loot-box RPGs
+mihoyo.com
+hoyoverse.com
+fate-go.us
+blizzard.com
+battle.net
+plarium.com
+raidshadowlegends.com
+dislyte.com
+
+# Social-casino mechanics
+moonactive.net
+coinmaster.com
+scopely.com
+monopolygo.com
+
+# Sports and competitive
+ea.com
+easports.com
+konami.com
+mobilelegends.com
+riotgames.com
+leagueoflegends.com
+
+# Roguelike and premium ports
+playdigious.com
+deadcells.com
+motiontwin.com
+nussygame.com
+megacrit.com
+slaythespire.com
+humblegames.com
+
+# Avatar worlds and open chat
+lockwoodpublishing.com
+avakinlife.com
+sulake.com
+hotelhideaway.com
+afterverse.com
+pkxdgame.com
+kitkagames.com
+stumbleguys.com
+
+# Interactive story and life sim
+episodeinteractive.com
+pixelberrystudios.com
+playchoices.com
+crazymaplestudio.com
+candywriter.com
+bitlifeapp.com
+thesims.com
+3minutegames.com
+square-enix.com
+square-enix-games.com
+
+# Casual
+miniclip.com
+8ballpool.com
+sybogames.com
+subwaysurfers.com
+tocaboca.com
+tocalifeworld.com
+
+# Simulation
+simcitybuildit.com
+eveechoes.com
+eveonline.com
+
+# ============================================================================
+# Web games, added 2026-08-17 on the owner's list.
+#
+# The app side of games is covered by the store rule, which blocks Play's
+# GAME_* categories outright. This is the browser side, and it is a different
+# problem: a mini-game site needs no install, so nothing the app blocker does
+# reaches it. It will stay leaky in the way any domain list is leaky — the
+# long tail here is endless and mostly regional. That is a known property
+# rather than a defect to be fixed by adding a thousand names.
+#
+# Every domain below was fetched on 2026-08-17 and its page title had to be
+# the site it claims to be. Five are behind bot protection and could not be
+# read — newgrounds.com, speeleiland.nl, spelle.be, logicieleducatif.fr and
+# construct.net — and are included anyway on the hiwaifu.com precedent, each
+# name being distinctive enough to belong to nothing else.
+# ============================================================================
+
+# --- the big portals ---
+poki.com
+crazygames.com
+y8.com
+miniclip.com
+armorgames.com
+kongregate.com
+newgrounds.com
+kizi.com
+silvergames.com
+lagged.com
+addictinggames.com
+coolmathgames.com
+friv.com
+gamesgames.com
+jeux.fr
+nitrome.com
+arkadium.com
+plays.org
+htmlgames.com
+gamesnacks.com
+
+# --- chess: deliberately NOT blocked ---
+# Both were on the original list and both came straight back off it on the
+# owner's call of 2026-08-17. The argument for blocking them was the engagement
+# machinery — rating ladders, streaks, blitz timers — and the argument against
+# is simply that chess is not what this list is for.
+#
+# lichess.org came off with chess.com rather than being asked about separately:
+# it is the free, ad-free, open-source one, so blocking it while allowing the
+# commercial one would have been backwards.
+#
+# lichess.org
+# chess.com
+
+# --- Benelux portals, which no international list carries ---
+spelletjes.nl
+spele.nl
+speeleiland.nl
+funnygames.be
+kinderspelletjes.nl
+spelletjes.be
+321spelletjes.be
+1001spelletjes.be
+spelle.be
+spele.be
+spelletjes123.nl
+playbelgium.be
+elkspel.nl
+
+# --- educational games ---
+# Judgement call, and a real one: several of these are used by schools,
+# so a child told to do homework on topmarks.co.uk will find it blocked.
+# They are here because they are games with a curriculum attached, and
+# the owner's rule is that games go. Delete lines to disagree.
+abcya.com
+funbrain.com
+kids.nationalgeographic.com
+natgeokids.com
+coolmath4kids.com
+mathplayground.com
+topmarks.co.uk
+ictgames.com
+starfall.com
+education.com
+arcademics.com
+turtlediary.com
+primarygames.com
+lululataupe.com
+jeuxpedago.com
+logicieleducatif.fr
+wordwall.net
+
+# --- making games, not playing them ---
+# The awkward corner of this list. Scratch, Blockly, code.org, Construct
+# and Unity Play teach programming — and they also host thousands of
+# finished games playable in the browser, which is what puts them here.
+# The cost is real and is worth knowing before somebody hits it.
+scratch.mit.edu
+code.org
+blockly.games
+construct.net
+play.unity.com
+
+# --- indie hosts ---
+itch.io
+gamejolt.com
+
+# --- HELD BACK, deliberately not blocked -------------------------------------
+# These four were on the owner's list, were held back, and the hold was
+# **confirmed by the owner on 2026-08-17**: blocking them is not the point.
+#
+# DNS cannot see a path, so blocking a domain blocks all of it — and for these
+# the games are a small corner of something much larger. Verified 2026-08-17:
+#
+#   vrt.be                 the Flemish public broadcaster — VRT NWS and VRT MAX sit here
+#   ouders.ketnet.be       literally *Ketnet for parents*: a resource for the adult, not games
+#   bbc.co.uk              the whole BBC — News, iPlayer, World Service
+#   archive.org            the Internet Archive: a library, the Wayback Machine, books and audio
+#
+# Left commented rather than deleted so that nobody adds them back without
+# meeting the reason first. Including them costs the phone the BBC, the VRT, the
+# Internet Archive, and a page written for parents. herald's own
+# `blocked_url_patterns` is the tool that could reach only the games paths —
+# but it works in herald alone, which fails the rule policy 55 set when Ecosia
+# was dropped: an engine is only as forced as its weakest browser.
+#
+# vrt.be
+# ouders.ketnet.be
+# bbc.co.uk
+# archive.org
+
